@@ -36,6 +36,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .layer {
