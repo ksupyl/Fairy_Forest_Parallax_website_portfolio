@@ -19,6 +19,13 @@
     font-weight: 900;
 }
 
+body {
+    background-color: #010101;
+    color: #fff;
+    font-family: raleway_f, sans-serif;
+    line-height: 1.55;
+}
+
 .header-main {
 }
 .header-main__layers {
