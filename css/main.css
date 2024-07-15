@@ -27,9 +27,35 @@ body {
 }
 
 .header-main {
+    position: relative;
 }
+
 .header-main__layers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+.layers__base {
+}
+
+.layers__middle{
+
+}
+
+.layers__front {
+}
+
 
 .layers__header {
 }
@@ -40,13 +66,6 @@ body {
 .layers__title {
 }
 
-.layer {
-}
-
-.layers__base {
-}
-.layers__front {
-}
 .main-article {
 }
 .main-article__content {
