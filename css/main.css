@@ -7,6 +7,7 @@
 :root {
     --index: calc(1vw + 1vh);
     --text-color: #e7e7e0;
+    --transition: transform .75s cubic-bezier(.075, .5, 0, 1);
 }
 
 @font-face {
@@ -60,6 +61,7 @@ body {
     background-size: cover;
     background-position: center;
     z-index: 2;
+    transition: var(--transition);
 }
 
 .layers__base {
@@ -78,6 +80,7 @@ body {
 .layers__header {
     z-index: 1;
     transform: translate3D(0, calc(var(--scrollTop) / 2), 0);
+    transition: var(--transition);
     will-change: transform;
     text-transform: uppercase;
     font-weight: 900;
@@ -114,6 +117,7 @@ body {
     font-size: calc(var(--index) * 1.8);
     letter-spacing: calc(var(--index) / 7.5);
     transform: var(--main-article-transform);
+    transition: var(--transition);
     will-change: transform;
 }
 
@@ -122,7 +126,12 @@ body {
     font-size: calc(var(--index) * .9);
     margin-top: calc(var(--index) / 1.25);
     transform: var(--main-article-transform);
+    transition: var(--transition);
     will-change: transform;
+}
+
+.content {
+	will-change: transform;
 }
 
 .main-article__copyright {
