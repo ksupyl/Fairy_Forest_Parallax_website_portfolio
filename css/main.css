@@ -5,7 +5,7 @@
 }
 
 :root {
-
+    --index: calc(1vw + 1vh);
 }
 
 @font-face {
@@ -21,7 +21,6 @@
 
 body {
     background-color: #010101;
-    color: #fff;
     font-family: raleway_f, sans-serif;
     line-height: 1.55;
 }
@@ -46,10 +45,12 @@ body {
     position: absolute;
     background-size: cover;
     background-position: center;
+    z-index: 2;
 }
 
 .layers__base {
     transform: translate3D(0, calc(var(--scrollTop) / 1.6), 0);
+    z-index: 0;
 }
 
 .layers__middle{
@@ -60,14 +61,25 @@ body {
     transform: translate3D(0, calc(var(--scrollTop) / 5.7), 0);
 }
 
-
 .layers__header {
-}
-
-.layers__caption {
+    z-index: 1;
+    transform: translate3D(0, calc(var(--scrollTop) / 2), 0);
+    will-change: transform;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #e7e7e0;
+    text-shadow: 0 0 15px #9e7d35;
 }
 
 .layers__title {
+    font-size: calc(var(--index) * 2.5);
+    letter-spacing: calc(var(--index) / 2.25);
+}
+
+.layers__caption {
+    font-size: calc(var(--index) / 1.175);
+    letter-spacing: calc(var(--index) / 3.5);
+    margin-top: calc(var(--index) * -.75);
 }
 
 .main-article {
