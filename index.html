@@ -9,37 +9,47 @@
     <title>Fairy Forest</title>
 
     <link rel="stylesheet" href="./css/main.css">
+
+    <script src="./libs/gsap/gsap.min.js" defer></script>
+    <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
+
     <script src="./js/app.js" defer></script>
 
 </head>
 
 <body>
 
-    <header class="header-main">
-        <div class="header-main__layers">
-            <div class="layers__header">
-                <div class="layers__caption">Welcome to Parallax</div>
-                <div class="layers__title">Fairy Forest</div>
-            </div>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header-main">
+                <div class="header-main__layers">
+                    <div class="layers__header">
+                        <div class="layers__caption">Welcome to Parallax</div>
+                        <div class="layers__title">Fairy Forest</div>
+                    </div>
 
-            <div class="layer layers__base" style="background-image: url(./img/layer-base.png);"></div>
-            <div class="layer layers__middle" style="background-image: url(./img/layer-middle.png);"></div>
-            <div class="layer layers__front" style="background-image: url(./img/layer-front.png);"></div>
+                    <div class="layer layers__base" style="background-image: url(./img/layer-base.png);"></div>
+                    <div class="layer layers__middle" style="background-image: url(./img/layer-middle.png);"></div>
+                    <div class="layer layers__front" style="background-image: url(./img/layer-front.png);"></div>
+                </div>
+            </header>
+
+            <article class="main-article" style="background-image: url(./img/dungeon.jpg);">
+                <div class="main-article__content">
+                    <h2 class="main-article__header">To be continued</h2>
+                    <p class="main-article__paragraph">Once upon a time, in a distant land, there was a magical forest known as the Fairy Forest. This enchanted
+                        place was home to all kinds of mystical creatures, including fairies, elves, and talking animals.</p>
+                    <p class="main-article__paragraph">It was a place where dreams came true and miracles were possible, where the boundaries between the real
+                        world and the realm of the fairy folk blurred and intertwined. And for those lucky enough to experience
+                        its wonders, the Fairy Forest would always hold a special place in their hearts.</p>
+                </div>
+
+                <div class="main-article__copyright">© KsuPyl + WebDesign Master</div>
+            </article>
         </div>
-    </header>
+    </div>
 
-    <article class="main-article" style="background-image: url(./img/dungeon.jpg);">
-        <div class="main-article__content">
-            <h2 class="main-article__header">To be continued</h2>
-            <p class="main-article__paragraph">Once upon a time, in a distant land, there was a magical forest known as the Fairy Forest. This enchanted
-                place was home to all kinds of mystical creatures, including fairies, elves, and talking animals.</p>
-            <p class="main-article__paragraph">It was a place where dreams came true and miracles were possible, where the boundaries between the real
-                world and the realm of the fairy folk blurred and intertwined. And for those lucky enough to experience
-                its wonders, the Fairy Forest would always hold a special place in their hearts.</p>
-        </div>
-
-        <div class="main-article__copyright">© KsuPyl + WebDesign Master</div>
-    </article>
 </body>
 
 </html>
